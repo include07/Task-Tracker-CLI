@@ -42,7 +42,6 @@ def get_last_id() -> int:
         return 0
     return max(task['id'] for task in tasks)
 
-
 def task_exists(id: int) -> bool:
     """
     Check if a task exists by its ID.
@@ -163,3 +162,6 @@ def list(status: str = typer.Argument(None, help="Filter tasks by status: done, 
     for task in tasks:
         typer.echo(f"ID: {task['id']}, Description: {task['description']}, Status: {task['status']}, Created At: {task['createdAt']}, Updated At: {task['updatedAt']}")
 
+
+if __name__ == "__main__":
+    app()

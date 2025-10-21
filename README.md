@@ -1,6 +1,6 @@
 # Task-Tracker-CLI
 
-A simple command-line tool for tracking tasks using Python and Typer.
+A simple command-line tool for tracking tasks using Python and Typer, part of the roadmap.sh guide https://roadmap.sh/projects/task-tracker
 
 ## Features
 

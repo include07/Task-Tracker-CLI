@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["task_tracker"]
+
+[project]
+name = "Task-Tracker-CLI"
+version = "0.1.0"
+description = "A simple CLI task manager"
+dependencies = ["typer"]
+
+[project.scripts]
+task-cli = "task_tracker.task_tracker:app"
